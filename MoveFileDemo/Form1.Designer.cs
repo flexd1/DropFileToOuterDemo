@@ -37,11 +37,11 @@
             // 
             // button1
             // 
-            button1.Location = new Point(56, 49);
+            button1.Location = new Point(54, 58);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "模拟拖动";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -61,15 +61,15 @@
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 2;
-            button3.Text = "button3";
+            button3.Text = "获取文件";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(109, 157);
+            textBox1.Location = new Point(54, 158);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(305, 23);
             textBox1.TabIndex = 3;
             // 
             // listView

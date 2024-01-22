@@ -51,8 +51,8 @@ namespace MoveFileDemo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button2_Click(null,null);
-            SimulateMouseDrag(-50, 0, 0,0);
+            button2_Click(null, null);
+            SimulateMouseDrag(-50, 0, 0, 0);
         }
 
         public static async void SimulateMouseDrag(int x, int y, int width, int height)
@@ -83,7 +83,7 @@ namespace MoveFileDemo
             System.Drawing.Point listViewLocation = listView.PointToScreen(Point.Empty);
 
             // 将鼠标移动到ListView的位置
-            Cursor.Position = new System.Drawing.Point(listViewLocation.X + listView.Width / 2-310, listViewLocation.Y + listView.Height / 2 -40);
+            Cursor.Position = new System.Drawing.Point(listViewLocation.X + listView.Width / 2 - 310, listViewLocation.Y + listView.Height / 2 - 40);
         }
 
         private void listView_ItemDrag(object sender, ItemDragEventArgs e)
@@ -91,7 +91,7 @@ namespace MoveFileDemo
             if (e.Button == MouseButtons.Left)
             {
                 if (listView.SelectedItems.Count <= 0)
-                { 
+                {
                     return;
                 }
 
@@ -192,14 +192,14 @@ namespace MoveFileDemo
                     // throw new Exception("路径既不是文件也不是文件夹");
                     MessageBox.Show("路径有误请重新输入", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                
+
             }
             catch (Exception)
             {
 
                 throw;
             }
-            
+
         }
 
     }
